@@ -25,10 +25,6 @@ public class SwiftLivechatPlugin: NSObject, FlutterPlugin {
 
             if (licenseNo == ""){
                 result(FlutterError(code: "", message: "LICENSE NUMBER EMPTY", details: nil))
-            }else if (visitorName == ""){
-                result(FlutterError(code: "", message: "VISITOR NAME EMPTY", details: nil))
-            }else if (visitorEmail == ""){
-                 result(FlutterError(code: "", message: "VISITOR EMAIL EMPTY", details: nil))
             }else{
                 LiveChat.licenseId = licenseNo // Set your licence number here
                 LiveChat.groupId = groupId // Optionally, You can route your customers to specific group of agents by providing groupId
