@@ -82,10 +82,6 @@ public class LivechatPlugin implements FlutterPlugin, MethodCallHandler, Activit
 
       if (licenseNo.trim().equalsIgnoreCase("")) {
         result.error("LICENSE NUMBER EMPTY", null, null);
-      }else if (visitorName.trim().equalsIgnoreCase("")) {
-        result.error("VISITOR NAME EMPTY", null, null);
-      }else if (visitorEmail.trim().equalsIgnoreCase("")) {
-        result.error("VISITOR EMAIL EMPTY", null, null);
       }else{
         Intent intent = new Intent(activity, com.livechatinc.inappchat.ChatWindowActivity.class);
         Bundle config = new ChatWindowConfiguration.Builder()
